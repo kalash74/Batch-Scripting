@@ -23,10 +23,10 @@ goto sal1
 echo Introduce el tiempo que debe esperar para apagarse en minutos
 set /p mitiempo=
 set /a mitiempo=mitiempo*60
-if %mitiempo%.==. echo No has introducido un tiempo v·lido
-if %mitiempo%.==. echo No has introducido un tiempo v·lido
+if %mitiempo%.==. echo No has introducido un tiempo v√°lido
+if %mitiempo%.==. echo No has introducido un tiempo v√°lido
 shutdown /s /t %mitiempo%
-if errorlevel 1 echo Algo salio mal &pause > nul & echo Pulsa una tecla para volver al men˙ &goto menu
+if errorlevel 1 echo Algo salio mal &pause > nul & echo Pulsa una tecla para volver al men√∫ &goto menu
 goto sal1
 :sal2
 shutdown /a
