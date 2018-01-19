@@ -61,7 +61,7 @@ goto ip
 :sal5
 echo Introduce la ruta del script
 set /p script=
-if not exist %script% echo Has metido mal la ruta, como lo metas todo igual... &pause > nul &echo Pulsa una tecla para volver al menu &goto menu
+if not exist %script% echo No existe el fichero, comprueba que la ruta sea correcta &pause > nul &echo Pulsa una tecla para volver al menu &goto menu
 echo == Salida del fichero %script%, Fecha %DATE%, Hora %TIME%, usuario %nombre_usuario% == >> salida
 C:\xampp\mysql\bin\mysql.exe -h %fqdn_bd% -u %nombre_usuario% -p -t < %script% >> salida
 goto menu
